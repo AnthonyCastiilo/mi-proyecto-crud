@@ -3,7 +3,7 @@ document.addEventListener('DOMContentLoaded', () => {
     // --- VARIABLES GLOBALES ---
     // IMPORTANTE: Esta URL es para tus pruebas locales.
     // ¡¡Después la cambiaremos por la de Render!!
-    const API_URL = 'http://localhost:3000/api/tareas'; 
+    const API_URL = 'https://mi-crud-backend-123.onrender.com/api/tareas';
 
     const form = document.getElementById('tarea-form');
     const inputTitulo = document.getElementById('titulo-tarea');
