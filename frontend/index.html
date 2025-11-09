@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CRUD con JS Vanilla, Promises y Mongo</title>
+    <style>
+        body { font-family: Arial, sans-serif; margin: 2em; background-color: #f4f4f4; }
+        .crud-container { max-width: 600px; margin: auto; background: #fff; padding: 20px; border-radius: 8px; box-shadow: 0 2px 5px rgba(0,0,0,0.1); }
+        form { display: flex; gap: 10px; margin-bottom: 20px; }
+        input[type="text"] { flex-grow: 1; padding: 10px; border: 1px solid #ccc; border-radius: 4px; }
+        button { padding: 10px 15px; cursor: pointer; border: none; border-radius: 4px; background-color: #007bff; color: white; }
+        button:hover { background-color: #0056b3; }
+        ul { list-style: none; padding: 0; }
+        li { display: flex; justify-content: space-between; align-items: center; padding: 10px; border-bottom: 1px solid #eee; }
+        li:last-child { border-bottom: none; }
+        .acciones button { margin-left: 5px; background-color: #dc3545; font-size: 12px; padding: 5px 8px; }
+        .acciones .btn-editar { background-color: #ffc107; }
+    </style>
+</head>
+<body>
+
+    <div class="crud-container">
+        <h1>Lista de Tareas (CRUD)</h1>
+
+        <form id="tarea-form">
+            <input type="text" id="titulo-tarea" placeholder="Escribe una nueva tarea..." required>
+            <input type="hidden" id="tarea-id">
+            <button type="submit" id="btn-submit">Agregar</button>
+        </form>
+
+        <ul id="lista-tareas">
+            </ul>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
