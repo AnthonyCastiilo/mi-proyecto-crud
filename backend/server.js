@@ -13,7 +13,7 @@ app.use(express.json()); // Permite a Express entender JSON
 
 // --- Conexión a Mongo Atlas ---
 // (Esta línea ya está correcta con tu contraseña)
-const MONGO_URI = "mongodb+srv://admin_crud:elan123456@cluster0.trmp9.mongodb.net/miBaseDeDatos?appName=Cluster0";
+const MONGO_URI = "mongodb+srv://admin_crud:elan123456@cluster0.tr6wnp9.mongodb.net/miBaseDeDatos?appName=Cluster0";
 
 mongoose.connect(MONGO_URI)
     .then(() => console.log("Conectado a Mongo Atlas exitosamente"))
